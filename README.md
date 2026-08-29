@@ -4,6 +4,15 @@
 - Install Tailwind
 - Install DaisyUI
 - Add NavBar component to App.jsx
+- Create Navbar JSX file
+- Instal react router dom
+- Create browser router > routes > route / Body > Route Children
+- Create a footer
+- Create a login Page
+- Install axios
+- CORS - install cors in backend and middleware to with configuration with origin and credentials
+- Whenever you're making API call so pass axios => { withCredentials: true }
+
 
 
 # React + Vite
