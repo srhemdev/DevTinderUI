@@ -114,7 +114,7 @@ const EditProfile = ({ user }) => {
             <button className="btn btn-primary" onClick={saveProfile}>Save Profile</button>
           </div>
         </div >
-        <UserCard user={user} />
+        <UserCard user={user} hideActions={true} />
         {errorMessage && (
           <div className="toast toast-top toast-center pt-[76px]">
             <div className="alert alert-error">
