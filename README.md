@@ -51,7 +51,20 @@ If you are developing a production application, we recommend using TypeScript wi
   - sudo apt install nginx
   - sudo systemctl start nginx
   - sudo systemctl enable nginx
-  - copy code from dist(build files) to /var/www/html
+  - copy code from dist(build files) to /var/www/html 
+    (sudo scp -r dist/* /var/www/html)
+  - Enable port :80 on your instance
 
+  # Payment Gateway Integration
+  - Signup on Razorpay and complete KYC
+  - Create a UI for premium page
+  - Creating an API for create order in backend
+  - Added my key and secret in env file
+  - Initialize RazorPay
+  - creating order on Razorpay
+  - create schema and model
+  - saved the order in payments collection
+  - Make the API dynamic
+  - Setup Razorpay webhook
 
 
