@@ -67,4 +67,8 @@ If you are developing a production application, we recommend using TypeScript wi
   - Make the API dynamic
   - Setup Razorpay webhook
 
+  # Real time chat using Websocket API
+  - Socket.io
+
+
 

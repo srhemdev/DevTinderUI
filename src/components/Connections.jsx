@@ -2,8 +2,10 @@ import axios from "axios";
 import { useEffect, useState } from "react";
 import { BASE_URL } from "../utils/constants";
 import UserCard from "./UserCard";
+import { useNavigate } from "react-router-dom";
 
 const Connections = () => {
+  const navigate = useNavigate();
   const [connections, setConnections] = useState([]);
   const fetchConnections = async () => {
     try {
@@ -22,9 +24,13 @@ const Connections = () => {
     <div className="flex flex-col items-center justify-center p-[80px]">
       <h1 className="text-bold text-3xl">Connections</h1>
       {connections.map((item) => (
-        <UserCard user={item} hideActions={true} />
-      ))}
-    </div>
+        <div key={item._id} className="flex flex-col">
+          <UserCard user={item} hideActions={true} />
+          <button className="btn btn-primary" onClick={() => navigate(`/chat/${item._id}`)}>Chat</button>
+        </div>
+      ))
+      }
+    </div >
   );
 }
 
