@@ -68,7 +68,12 @@ If you are developing a production application, we recommend using TypeScript wi
   - Setup Razorpay webhook
 
   # Real time chat using Websocket API
-  - Socket.io
+  - Install socket.io-client
+  - Add socket events
+  - Create UI
+  - Use daisy ui chat bubbles
+  - fetch chat messages using chat api
+  - Show messages on initilization
 
 
 
